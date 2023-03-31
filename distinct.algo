@@ -1,0 +1,30 @@
+
+PROCEDURE dot_product
+VAR
+   tab: ARRAY_OF INTEGER[6];
+   i, j; som : INTEGER;
+BEGIN
+    FOR i FROM 0 TO 6 DO 
+      Write("donner un entier naturel:");
+      Read(tab[i]);
+    END_FOR
+    WHILE(i<tab.length) DO
+       tab[i]:=tab[i+1];
+       i:=i+1
+    END_WHILE
+    FOR j FROM 0 TO 6 DO
+       Write("donner un entier naturel:");
+       Read(tab[j]);
+   END_FOR
+   WHILE(j<tab.length) DO
+       tab[j]:=tab[j+1];
+   END_WHILE
+   som:=0;
+   IF (i:= j ) 
+      continue;
+   ELSE
+      som := som + i + j;
+   END_ELSE
+   END_IF
+  Write("som = " , som);
+END

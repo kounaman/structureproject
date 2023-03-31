@@ -1,0 +1,30 @@
+ALGORITHM dot_product
+VAR
+   tab V1[i], V2[i]: ARRAY_OF INTEGER[6];
+   i : INTEGER;
+   angle : FLOAT;
+BEGIN
+   dot_product:=0;
+   FOR i FROM 0 TO 5 STEP 1 DO
+       Write("Donner un entier naturel ", i+1 , "V1");
+       Read(V1[i]);
+       Write("Donner un entier naturel ", i+1 , "V2");
+       Read(V2[i]);
+       dot_product:=V1[i]*V2[i]
+       IF(angle(V1[i],V2[i]):=90)
+          Write("dot_product = " , 0 ";");
+       END_IF
+       ELSE
+          Write("dot_product = " , dot_product ";");
+       END_ELSE
+       END_IF         
+   END_FOR
+END
+FUNCTION  dot_product(V1[i], V2[i]: INTEGER): INTEGER;
+BEGIN
+     
+     dot_product:=V1[i]*V2[i];
+     Write(dot_product);
+     RETURN Write dot_product;
+END
+
